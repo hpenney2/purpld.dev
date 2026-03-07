@@ -1,0 +1,34 @@
+i {
+  color: inherit;
+}
+
+/* From https://icon-sets.iconify.design/pixel/ */
+/* License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) */
+/* Credit to HackerNoon */
+.pixel--bluesky {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M23 3v8h-1v2h-2v1h-2v1h2v1h1v3h-1v1h-1v1h-2v1h-2v-1h-1v-1h-1v-2h-2v2h-1v1H9v1H7v-1H5v-1H4v-1H3v-3h1v-1h2v-1H4v-1H2v-2H1V3h1V2h2v1h2v1h1v1h1v1h1v1h1v2h1v1h2V9h1V7h1V6h1V5h1V4h1V3h2V2h2v1z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.pixel--github {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M23 9v6h-1v2h-1v2h-1v1h-1v1h-1v1h-2v1h-1v-5h-1v-1h1v-1h2v-1h1v-1h1V9h-1V6h-2v1h-1v1h-1V7h-4v1H9V7H8V6H6v3H5v5h1v1h1v1h2v2H7v-1H6v-1H4v1h1v2h1v1h3v3H8v-1H6v-1H5v-1H4v-1H3v-2H2v-2H1V9h1V7h1V5h1V4h1V3h2V2h2V1h6v1h2v1h2v1h1v1h1v2h1v2z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}

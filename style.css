@@ -1,0 +1,175 @@
+@import "/icons.css";
+
+:root {
+  --me: #b46bff;
+  --me-tinted: #8029d8;
+}
+
+* {
+  font-family:
+    Hack, "Consolas", "Lucida Console", "Courier New", Courier, monospace;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body > * {
+  text-align: center;
+  width: fit-content;
+}
+
+.at {
+  color: var(--me-tinted);
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+/* clever tricks "borrowed" from https://dev.to/afif/a-scalable-css-only-typewriter-effect-2opn ! */
+/* but... it turns out they don't work so well with centered text. retained just in case */
+/* .typing {
+  display: inline-flex;
+}
+
+.typing span {
+  word-break: break-all;
+  height: 1.2em;
+  width: 0%;
+  overflow: hidden;
+  animation: typewriter 3s linear 0.5s forwards;
+}
+
+.typing::before {
+  content: " ";
+  display: inline-block;
+}
+
+@keyframes typewriter {
+  90%,
+  100% {
+    width: 100%;
+  }
+} */
+
+.typing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typing {
+  box-sizing: content-box;
+  overflow: hidden;
+  border-right: 0.15em solid var(--me);
+  white-space: nowrap;
+
+  animation:
+    handle-typewriter 0.7s steps(6) forwards,
+    /* handle-typewriter 0.85s steps(8) forwards, */ caretBlink 1s step-end
+      infinite;
+}
+
+@keyframes handle-typewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 6ch;
+  }
+}
+
+@keyframes caretBlink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--me);
+  }
+}
+
+/* blink in animation (like an old neon sign). disabled for now because it seems
+   more distracting than anything right now honestly lol ;w; */
+/* main {
+  opacity: 0;
+  animation: opacity-easeOutElastic 0.75s linear 1.5s reverse forwards;
+} */
+
+/* oh. that's long. thanks mr. https://easings.net/#easeOutElastic */
+@keyframes opacity-easeOutElastic {
+  0% {
+    opacity: 1;
+  }
+
+  16% {
+    opacity: -0.32;
+  }
+
+  28% {
+    opacity: 0.13;
+  }
+
+  44% {
+    opacity: -0.05;
+  }
+
+  59% {
+    opacity: 0.02;
+  }
+
+  73% {
+    opacity: -0.01;
+  }
+
+  88% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.longguy {
+  display: block;
+  background: transparent;
+  border: solid;
+  border-radius: 2px;
+  padding: 1em;
+  margin: 1em;
+
+  text-decoration: none;
+}
+
+.longguy * {
+  color: inherit;
+  vertical-align: middle;
+}
+
+.longguy i {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5em;
+}
+
+.attribution {
+  font-size: 0.8em;
+  margin: 7px;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* line-height: 0.5em; */
+}
