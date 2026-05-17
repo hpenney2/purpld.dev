@@ -64,6 +64,12 @@ p {
   }
 } */
 
+/* doing this to avoid margins collapsing */
+h1 {
+  margin: 0;
+  padding-block: 0.67em;
+}
+
 .typing-container {
   display: flex;
   justify-content: center;
@@ -143,6 +149,10 @@ p {
   }
 }
 
+main {
+  margin: auto;
+}
+
 .longguy {
   display: block;
   background: transparent;
@@ -168,6 +178,7 @@ p {
 .attribution {
   font-size: 0.8em;
   margin: 10px;
+  align-self: flex-end;
 
   /* potentially move into @media (orientation: landscape)? */
   /* position: absolute;
