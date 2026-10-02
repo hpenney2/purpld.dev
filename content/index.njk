@@ -7,44 +7,42 @@
 
     <link rel="icon" href="/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css" rel="stylesheet" />
 
     <base target="_blank" />
   </head>
   <body>
     <main>
-      <h1 class="typing-container">
-        <span class="at">@</span><span class="typing">purpld</span>
+      <h1 class="headerflex">
+        <span class="at">@</span>
+        <span class="typing blinking" style="--typing-len: {{ me.username | length }}">{{ me.username }} </span>
       </h1>
 
-      <p>Not much here yet, is there?</p>
+      <p class="subtitle">hihi</p>
 
-      <a
-        class="longguy"
-        style="color: #1185fe"
-        href="https://bsky.app/profile/hpenney2.bsky.social"
-      >
-        <i class="pixel--bluesky" aria-hidden="true"></i>
-        bluesky
-      </a>
-      <a
-        class="longguy"
-        style="color: #f2f5f3"
-        href="https://github.com/hpenney2/"
-      >
-        <i class="pixel--github" aria-hidden="true"></i>
-        github
-      </a>
+      <div class="flex row wrap" style="gap: 2em">
+        <img class="logo smolrotate" src="/assets/img/checkerboard_rotate.gif" alt="purpld's cat lamp logo" />
+
+        <div>
+          <a class="longguy" style="color: var(--me)" href="/about" target="_self">
+            <i class="pixel--question-circle-solid" aria-hidden="true"></i>
+            who?
+          </a>
+          <a class="longguy" style="color: #f2f5f3" href="https://github.com/hpenney2/">
+            <i class="pixel--github" aria-hidden="true"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <p class="subtitle">contact? <a href="mailto:{{ me.email }}">{{ me.email }}</a></p>
     </main>
 
     <footer class="attribution">
       <p>
         Credit to:
-        <cite>HackerNoon</cite> (pixel icons;
-        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)
+        <cite>HackerNoon</cite>
+        (pixel icons; <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)
       </p>
     </footer>
   </body>

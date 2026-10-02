@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who? || @purpld</title>
+
+    <link rel="icon" href="/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="flex" style="margin-top: 5vh; margin-bottom: 5vh;">
+      <nav class="breadcrumbs">
+        <a href="/">Home</a>
+      </nav>
+      <img class="logo" src="/assets/img/checkerboard_rotate.gif" alt="purpld's cat lamp logo" />
+
+      <!-- display: flex -->
+      <h1 class="headerflex">
+        <span class="at">@</span>
+        purpld
+      </h1>
+
+      <p class="subtitle">A Nerd With an Internet Connection&trade;</p>
+
+      <p>
+        Hihi! I am <strong class="me">Hunter</strong>, but I go by <span class="at">@</span>purpld or
+        <span class="at">@</span>hpenney2 online.
+      </p>
+      <p>
+        I am a programmer (since about age 9!) and a computer science student with an abundance of random interests.
+      </p>
+
+      <br />
+
+      <div class="aboutflex">
+        <section>
+          <h2 class="headerflex">
+            <span class="typing" style="--typing-len: {{ 'contact' | length }}; --typetime: 1.5s">contact</span>
+          </h2>
+          <p>Send me an email!</p>
+          <p><a href="mailto:{{ me.email }}">{{ me.email }}</a></p>
+        </section>
+        <section>
+          <h2 class="headerflex">
+            <span class="typing" style="--typing-len: {{ 'interests' | length }}">interests</span>
+          </h2>
+          <ul style="padding: 0; text-align: left; max-width: 30em;">
+            <li>
+              Technology
+              <ul>
+                <li>Programming / software dev <span class="quiet">(obviously!)</span></li>
+                <li>I've always been a bit of a tinkerer.</li>
+                <li>
+                  I love to know the intricacies that make something work! This is actually a big part of the reason I
+                  love working with technology; it is often that many pieces have to come together to make something
+                  work.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Video games
+              <ul>
+                <li>My favorite game is Ori and the Blind Forest!</li>
+                <li>I also love Pokémon.</li>
+              </ul>
+            </li>
+            <li>
+              Mathematics and science
+              <ul>
+                <li>
+                  These have always been my favorite subjects. I love problem-solving and I am very interested in the
+                  world that we live in, so I naturally gravitate towards these subjects.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="headerflex">
+            <span class="typing" style="--typing-len: {{ 'languages / tech' | length }}; --typetime: 1.75s"
+              >languages / tech</span
+            >
+          </h2>
+
+          <ul class="langlist" role="list">
+            <li><i class="devicon--python" aria-hidden="true"></i> Python <span class="tag">Proficient</span></li>
+            <li>
+              <i class="devicon--javascript" aria-hidden="true"></i
+              ><i class="devicon--typescript" aria-hidden="true"></i> JavaScript + TypeScript
+              <span class="tag">Proficient</span>
+              <ul>
+                <li><i class="devicon--vuejs" aria-hidden="true"></i> Vue.js <span class="tag">Acquainted</span></li>
+                <li><i class="devicon--react"></i> React <span class="tag">Experienced</span></li>
+              </ul>
+            </li>
+            <li><i class="devicon--rust" aria-hidden="true"></i> Rust <span class="tag">Acquainted</span></li>
+            <li><i class="devicon--csharp" aria-hidden="true"></i> C# <span class="tag">Experienced</span></li>
+            <li><i class="devicon--cplusplus" aria-hidden="true"></i> C++ <span class="tag">Acquainted</span></li>
+          </ul>
+        </section>
+        <section style="flex-basis: 100%;">
+          <h2 class="headerflex">
+            <span class="typing" style="--typing-len: {{ 'projects' | length }}; --typetime: 1.2s">projects</span>
+          </h2>
+          <p>These are some projects I have made that I think you should know about.</p>
+          <ul class="projectlist">
+            <li>
+              <h3>iPhotoKam</h3>
+              <p class="projinfo" style="color: var(--lang-rust);">Rust</p>
+              <div class="links">
+                <a href="https://github.com/hpenney2/iphotokam" target="_blank" aria-label="GitHub"
+                  ><i class="pixel--github" aria-hidden="true"></i
+                ></a>
+              </div>
+              <p>
+                Reads the Photos SQLite database from a mounted iOS device and adds tags to photos in digiKam for photos
+                that are favorited, hidden, or in an album.
+              </p>
+
+              <p class="sub">
+                I wrote this because I needed to sort through the <em>tons</em> of photos and videos that I have on my
+                phone. I noticed that the SQLite database is just kinda... there, when you mount over ifuse?
+              </p>
+              <p class="sub">
+                I took the time to <strong>reverse engineer</strong> the database in order to extract data from it, as
+                well as digiKam's database (my media tool of choice) to add the data as tags.
+              </p>
+            </li>
+            <li>
+              <h3>LARPARDY!</h3>
+              <p class="projinfo">
+                <span style="color: var(--lang-typescript)">TypeScript</span> +
+                <span style="color: var(--lang-vue)">Vue</span>
+              </p>
+              <div class="links">
+                <a href="https://github.com/hpenney2/larpardy" target="_blank" aria-label="GitHub"
+                  ><i class="pixel--github" aria-hidden="true"></i
+                ></a>
+                <a
+                  href="https://discord.com/discovery/applications/1521015095738499083"
+                  target="_blank"
+                  aria-label="Discord"
+                  ><i class="pixel--discord" aria-hidden="true"></i
+                ></a>
+              </div>
+              <p>
+                A Discord activity cloning a certain famous blue trivia game with a grid, so you can play it with your
+                friends right where you already are.
+              </p>
+              <p class="sub">
+                I <em>really</em> don't like things like JeopardyLabs and such because they feel so clunky to use! I
+                have wanted to make a Discord activity for a while, and the idea seemed perfect!
+              </p>
+              <p class="sub">
+                This was quite challenging because I had to make this work as a <strong>multiplayer</strong> game.
+                <br />
+                I used <strong>Socket.IO</strong> for the multiplayer, and I store state in <strong>Redis</strong> so it
+                can be accessed by multiple nodes and isn't lost if a server needs to restart.
+              </p>
+              <p class="sub">
+                I am working on implementing user-created boards. User data (e.g., moderation info) and submitted boards
+                are stored in a <strong>PostgreSQL</strong> database.
+              </p>
+              <p class="sub">
+                With a SQL database, it wouldn't be difficult to split this project from Discord as well; for this, they
+                mostly serve as a discovery platform for the game.
+              </p>
+            </li>
+            <li>
+              <h3>Cycles AI</h3>
+              <p class="projinfo"><span style="color: var(--lang-python)">Python</span></p>
+              <p>
+                An AI chatbot I developed in 2024 that lives in VRChat, a VR social game. Speak to it, and it will speak
+                and emote back!
+              </p>
+              <p class="sub">
+                Inspired by a similar project, this got me very up close to dealing with several types of AI models.
+              </p>
+              <p class="sub">Cycles used many layers to achieve a reactive chatbot. I used:</p>
+              <ol class="sub">
+                <li><strong>faster-whisper</strong> for speech recognition inference.</li>
+                <li>
+                  <strong>Transformers</strong> + <strong>PyTorch</strong> + <strong>AutoGPTQ</strong> (while it was
+                  still maintained) for locally loading and running the LLM + sentiment analysis model.
+                </li>
+                <li><strong>Coqui XTTSv2</strong> for text to speech.</li>
+                <li>
+                  <strong>Open Sound Control (OSC)</strong> to communicate with VRC, including setting parameters to
+                  play emotion animations that I created (based on state or the sentiment analysis result), and showing
+                  the current message in the chatbox while it is being spoken.
+                </li>
+              </ol>
+              <p class="sub">The result is a 3D avatar that can listen and respond with emotion and body language!</p>
+              <p class="sub">Unfortunately, this remains closed source until I have time to clean this project.</p>
+            </li>
+            <li>
+              <h3>CatLamp</h3>
+              <p class="projinfo">
+                <span style="color: var(--lang-python)">Python</span>
+              </p>
+              <div class="links">
+                <a href="https://github.com/hpenney2/CatLamp" target="_blank" aria-label="GitHub"
+                  ><i class="pixel--github" aria-hidden="true"></i
+                ></a>
+              </div>
+              <p>The all-in-one Discord bot.</p>
+              <p class="sub">
+                This project is a bit older (2020) and was when I was still learning my bearings with Python and some
+                programming concepts in general, and as such, is a bit crude.
+                <br />
+                Do not expect perfect code looking at this codebase.
+              </p>
+              <p class="sub">
+                With that said, I worked on this project with one fellow developer friend who helped me greatly
+                throughout the lifespan of this project. This project was inherently collaborative, and as such, we
+                worked on and coordinated each update together using <strong>Git</strong>.
+              </p>
+              <p class="sub">
+                Discord is a chat application, and while it now has a formal command system, it did not when I developed
+                CatLamp. Some creativity is required to make prefixed commands (e.g., +help) work the way a user may
+                expect.
+              </p>
+              <p class="sub">CatLamp was multi-purpose and as such it used many things:</p>
+              <ol class="sub">
+                <li>
+                  The bot itself used the <strong>discord.py</strong> API wrapper to connect with the Discord API, which
+                  uses <strong>aiohttp</strong>.
+                </li>
+                <li>Reminders were stored using a <strong>MongoDB</strong> database.</li>
+                <li>
+                  Several "fun" image manipulation commands accepted attachments or file URLs and manipulated them using
+                  <strong>Pillow</strong> (e.g., masking, changing colors, saturation, mirroring or rotating, etc.).
+                </li>
+                <li>The Reddit API was used to pull and display random posts.</li>
+                <li>
+                  The live version once used by 300+ users was hosted on an
+                  <strong>Amazon Web Services (AWS) EC2</strong> instance, ensuring access only with secure credentials,
+                  and a high uptime.
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
