@@ -414,6 +414,21 @@ h1 {
   clear: both;
 }
 
+.interests {
+  padding: 0;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 2em;
+
+  list-style-position: inside;
+}
+
+.interests > li {
+  max-width: 30em;
+}
+
 .sub {
   font-size: smaller;
   color: var(--dark-text);

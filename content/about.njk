@@ -16,7 +16,6 @@
       </nav>
       <img class="logo" src="/assets/img/checkerboard_rotate.gif" alt="purpld's cat lamp logo" />
 
-      <!-- display: flex -->
       <h1 class="headerflex">
         <span class="at">@</span>
         purpld
@@ -25,11 +24,17 @@
       <p class="subtitle">A Nerd With an Internet Connection&trade;</p>
 
       <p>
-        Hihi! I am <strong class="me">Hunter</strong>, but I go by <span class="at">@</span>purpld or
+        Hi! I am <strong class="me">Hunter</strong>, but you might find me as <span class="at">@</span>purpld or
         <span class="at">@</span>hpenney2 online.
       </p>
+      <p>I am a programmer and a computer science student with an abundance of random interests.</p>
       <p>
-        I am a programmer (since about age 9!) and a computer science student with an abundance of random interests.
+        I started programming with C# and then Python at about age 9, and quickly fell in love with the puzzle-like
+        nature of it all.
+      </p>
+      <p>
+        After years of teaching myself how to work with many different languages and stacks by working hard on different
+        projects, I decided to pursue a degree in computer science, knowing that I wanted this to be my career.
       </p>
 
       <br />
@@ -37,46 +42,12 @@
       <div class="aboutflex">
         <section>
           <h2 class="headerflex">
-            <span class="typing" style="--typing-len: {{ 'contact' | length }}; --typetime: 1.5s">contact</span>
+            <span class="typing" style="--typing-len: {{ 'contact' | length }}; --typetime: 1s">contact</span>
           </h2>
           <p>Send me an email!</p>
           <p><a href="mailto:{{ me.email }}">{{ me.email }}</a></p>
         </section>
-        <section>
-          <h2 class="headerflex">
-            <span class="typing" style="--typing-len: {{ 'interests' | length }}">interests</span>
-          </h2>
-          <ul style="padding: 0; text-align: left; max-width: 30em;">
-            <li>
-              Technology
-              <ul>
-                <li>Programming / software dev <span class="quiet">(obviously!)</span></li>
-                <li>I've always been a bit of a tinkerer.</li>
-                <li>
-                  I love to know the intricacies that make something work! This is actually a big part of the reason I
-                  love working with technology; it is often that many pieces have to come together to make something
-                  work.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Video games
-              <ul>
-                <li>My favorite game is Ori and the Blind Forest!</li>
-                <li>I also love Pokémon.</li>
-              </ul>
-            </li>
-            <li>
-              Mathematics and science
-              <ul>
-                <li>
-                  These have always been my favorite subjects. I love problem-solving and I am very interested in the
-                  world that we live in, so I naturally gravitate towards these subjects.
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
+
         <section>
           <h2 class="headerflex">
             <span class="typing" style="--typing-len: {{ 'languages / tech' | length }}; --typetime: 1.75s"
@@ -100,6 +71,7 @@
             <li><i class="devicon--cplusplus" aria-hidden="true"></i> C++ <span class="tag">Acquainted</span></li>
           </ul>
         </section>
+
         <section style="flex-basis: 100%;">
           <h2 class="headerflex">
             <span class="typing" style="--typing-len: {{ 'projects' | length }}; --typetime: 1.2s">projects</span>
@@ -245,6 +217,43 @@
                   and a high uptime.
                 </li>
               </ol>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="headerflex">
+            <span class="typing" style="--typing-len: {{ 'interests' | length }}; --typetime: 1.5s">interests</span>
+          </h2>
+          <ul class="interests">
+            <li>
+              Technology
+              <ul>
+                <li>Programming / software dev <span class="quiet">(obviously!)</span></li>
+                <li>
+                  I love to know the intricacies that make something work. This is a big reason why I love working with
+                  technology; it is often that many pieces have to come together to make something work.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Video games
+              <ul>
+                <li>
+                  I have always had some interest in making my own, so I have some experience working with
+                  <i class="devicon--unity" aria-hidden="true"></i> <strong>Unity</strong>.
+                </li>
+                <li>My favorites are <cite>Ori and the Blind Forest</cite> and <cite>Pokémon</cite>.</li>
+              </ul>
+            </li>
+            <li>
+              Mathematics and science
+              <ul>
+                <li>
+                  These have always been my favorite subjects. I love problem-solving and I am very interested in the
+                  world that we live in, so I naturally gravitate towards these subjects.
+                </li>
+              </ul>
             </li>
           </ul>
         </section>
