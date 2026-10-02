@@ -401,6 +401,19 @@ h1 {
   text-align: right;
 }
 
+.projectlogo {
+  float: left;
+  width: 5em;
+  margin-bottom: 1em;
+
+  border-radius: 1.5em;
+  corner-shape: squircle;
+}
+
+.projectlist p:not(.projinfo) {
+  clear: both;
+}
+
 .sub {
   font-size: smaller;
   color: var(--dark-text);
